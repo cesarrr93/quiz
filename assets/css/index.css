@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20%;
+}
+button {
+    background-color: rebeccapurple;
+    padding:10px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+}
+#countdown{
+    display: inline;
+    text-align: left;
+}
+#choices{
+    text-align:left;
+    padding-left: 35%;
+}
+
+#answerStatus{
+    color: gray;
+    text-align: right;
+    border-top: gray;
+    padding-right: 35%;
+}
