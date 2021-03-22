@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- main page  -->
+        <div id="start" style="display: none;">
+            <h1 class="welcome">Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit<br />
+                Keep in mind that incorrect answers will penalize your score/time <br />
+                by ten seconds!
+            </p>
+            <!-- Start button -->
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Take me to High Score section -->
+        <div id="highScoreLink" style="display: none;">
+            <a href="highScorePage">View High Score</a>
+        </div>
+
+        <!-- timer -->
+        <div id="countdown"></div>
+        <div id="timerPause" style="display: none;"></div>
+
+        <!-- Questions section -->
+        <div id="quiz" style="display: none;">
+            <!-- questions -->
+            <div id="questions"></div>
+            <!-- answers -->
+            <div id="choices">
+                <p><button class="choice" id="choice1" onClick="validateAnswer('choice1')"></button></p>
+                <p><button class="choice" id="choice2" onClick="validateAnswer('choice2')"></button></p>
+                <p><button class="choice" id="choice3" onClick="validateAnswer('choice3')"></button></p>
+                <p><button class="choice" id="choice4" onClick="validateAnswer('choice4')"></button></p>
+            </div>
+        </div>
+
+        <!--  Enter Initials form -->
+        <div id="score" style="display: none;">
+            <p>
+                Your Score is <span id="high-score"></span>.<br />
+                <form id="highScoreForm">
+                    <label for="initials">Enter initials: </label>
+                    <input type="text" id="initials" name="initials"></input>
+                    <button type="submit" id="submitBtn" onClick="renderScore()">Submit</button>
+                </form>
+            </p>
+        </div>
+        <!-- High Score Page -->
+        <div id="highScorePage" style="display: none;">
+            <p> Welcome to the high score page</p>
+            <p> Here are the high scores</p>
+            <div id="listOfHighScores">
+                <div id="listOfInitials">Initials</div>
+                <div id="listOfScores" style="display: inline;">Scores</div>
+            </div>
+
+            <p><button id="startbtn2">Start Over</button></p>
+        </div>
+        <!-- Show if answer was correct or wrong -->
+        <div id="answerStatus"></div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
