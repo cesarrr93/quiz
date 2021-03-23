@@ -1,8 +1,8 @@
 // Setting all the variables needed for the Java script
 
 var startEl = document.getElementById('start'); //start Div
-var startBtn = document.getElementById('startbtn'); //start button
-var startBtn2 = document.getElementById('startbtn2'); //start Over button
+var startBtn = document.getElementById('start-btn'); //start button
+var startBtn2 = document.getElementById('start-btn2'); //start Over button
 var timerEl = document.getElementById('countdown'); //timer
 var containerEl = document.getElementById('containter') // container div
 var quizEl = document.getElementById('quiz'); //quiz element encompassing question and answer
